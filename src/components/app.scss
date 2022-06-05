@@ -1,0 +1,125 @@
+[class*="__container"] {
+   max-width: 1170px;
+   box-sizing: content-box;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 50px;
+   padding: 5px 15px;
+   border: 1px solid #000;
+   font-size: 20px;
+   background-color: #fff;
+   transition: all 0.3s ease 0s;
+   @media (any-hover: hover) {
+      &:hover {
+         color: #fff;
+         background-color: #000;
+      }
+   }
+   &:not(:last-child) {
+      margin-bottom: 30px;
+   }
+}
+
+.notes {
+   padding: 20px 0px;
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+   &__title {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: center;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+   }
+   &__item {
+   }
+}
+
+.item-notes {
+   border: 1px solid #000;
+   &__body {
+   }
+   &__header {
+      padding: 15px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   &__icons {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media (min-width: 767.98px) {
+         gap: 15px;
+      }
+      button {
+         font-size: 18px;
+         @media (any-hover: hover) {
+            transition: all 0.3s ease 0s;
+         }
+      }
+   }
+}
+
+.icons-button {
+   &__del {
+      @media (any-hover: hover) {
+         &:hover {
+            color: red;
+         }
+      }
+   }
+   &__edit {
+      @media (any-hover: hover) {
+         &:hover {
+            color: orange;
+         }
+      }
+   }
+   &__check {
+      @media (any-hover: hover) {
+         &:hover {
+            color: green;
+         }
+      }
+   }
+}
+
+.date-time-note {
+   color: #fff;
+   @media (min-width: 767.98px) {
+      font-size: 18px;
+   }
+   font-weight: 700;
+}
+
+.note-body {
+   padding: 10px;
+}
+
+textarea {
+   outline: none;
+   min-height: 150px;
+   height: 100%;
+   width: 100%;
+   resize: vertical;
+}

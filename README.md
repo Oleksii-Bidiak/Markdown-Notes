@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 An application for creating notes using Markdown
 
 ## Demonstration
-To view a demo of the project, go [https://oleksii-bidiak.github.io/Markdown-Notes/].
+To view a demo of the project, go [here](https://oleksii-bidiak.github.io/Markdown-Notes/).
 
 
 ## Available Scripts
